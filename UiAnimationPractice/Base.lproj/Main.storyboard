@@ -84,11 +84,11 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMU-zd-Iqz">
-                                <rect key="frame" x="136.66666666666666" y="508" width="119.99999999999997" height="60"/>
+                                <rect key="frame" x="16.666666666666657" y="508" width="360" height="60"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="B4S-T4-uUe"/>
-                                    <constraint firstAttribute="width" secondItem="OMU-zd-Iqz" secondAttribute="height" multiplier="2:1" id="LWe-ei-RBi"/>
+                                    <constraint firstAttribute="width" secondItem="OMU-zd-Iqz" secondAttribute="height" multiplier="6:1" id="LWe-ei-RBi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -104,27 +104,67 @@
                                     <action selector="loginBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLz-o1-J1d"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Dqy-RP-F2D">
+                                <rect key="frame" x="15" y="79" width="120" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="W5r-Kq-qio"/>
+                                    <constraint firstAttribute="height" constant="60" id="r6r-9N-2MQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="iKa-Fi-0oQ">
+                                <rect key="frame" x="258" y="79" width="120" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="ECI-Dc-s80"/>
+                                    <constraint firstAttribute="height" constant="60" id="pTM-RZ-u7X"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Ph5-bB-u1j">
+                                <rect key="frame" x="53" y="620" width="120" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OES-ZG-Zh9"/>
+                                    <constraint firstAttribute="width" constant="120" id="x2w-Pp-fht"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="XDt-Sv-p72">
+                                <rect key="frame" x="264" y="708" width="120" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="II5-TO-OKn"/>
+                                    <constraint firstAttribute="height" constant="60" id="zJC-VG-Ygd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="XDt-Sv-p72" firstAttribute="top" secondItem="vmf-su-0y4" secondAttribute="bottom" constant="300" id="4zb-kt-uco"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iKa-Fi-0oQ" secondAttribute="trailing" constant="15" id="8Rz-an-id2"/>
+                            <constraint firstItem="Dqy-RP-F2D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="AGi-FZ-Inc"/>
                             <constraint firstItem="GV0-Kk-RIC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="Aae-9S-hUT"/>
                             <constraint firstItem="OMU-zd-Iqz" firstAttribute="top" secondItem="vmf-su-0y4" secondAttribute="bottom" constant="100" id="B4w-H8-IqI"/>
                             <constraint firstItem="GV0-Kk-RIC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HGK-Uc-Y3V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XDt-Sv-p72" secondAttribute="trailing" constant="9" id="Y6R-2C-Ccf"/>
                             <constraint firstItem="OMU-zd-Iqz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aPo-Ci-dL6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vmf-su-0y4" secondAttribute="trailing" constant="16" id="aqD-ZJ-y0Q"/>
+                            <constraint firstItem="iKa-Fi-0oQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="b80-BY-Ouw"/>
                             <constraint firstItem="SgF-0L-1Pb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c9i-N2-ZKc"/>
                             <constraint firstItem="IMW-2C-vqu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="d3e-sW-8ku"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ph5-bB-u1j" secondAttribute="bottom" constant="138" id="eOb-fj-LOU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SgF-0L-1Pb" secondAttribute="trailing" constant="16" id="ihL-eR-nP4"/>
                             <constraint firstAttribute="bottom" secondItem="IMW-2C-vqu" secondAttribute="bottom" id="jrE-x1-CbS"/>
                             <constraint firstItem="IMW-2C-vqu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jw6-eV-sYS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IMW-2C-vqu" secondAttribute="trailing" id="kHD-vb-pSa"/>
+                            <constraint firstItem="Dqy-RP-F2D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="oY3-94-YVA"/>
                             <constraint firstItem="vmf-su-0y4" firstAttribute="top" secondItem="SgF-0L-1Pb" secondAttribute="bottom" constant="10" id="pJo-xk-P14"/>
                             <constraint firstItem="vmf-su-0y4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="red-Ca-gIz"/>
                             <constraint firstItem="SgF-0L-1Pb" firstAttribute="top" secondItem="GV0-Kk-RIC" secondAttribute="bottom" constant="35" id="u9Y-IF-Z7n"/>
+                            <constraint firstItem="Ph5-bB-u1j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="vm8-bO-gXu"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cloud1" destination="Dqy-RP-F2D" id="1fm-NK-1gU"/>
+                        <outlet property="cloud2" destination="iKa-Fi-0oQ" id="ppp-jq-9lw"/>
+                        <outlet property="cloud3" destination="Ph5-bB-u1j" id="ZoV-Pk-fbd"/>
+                        <outlet property="cloud4" destination="XDt-Sv-p72" id="0W3-dm-BJW"/>
                         <outlet property="emailTxt" destination="yfw-le-Anp" id="uuQ-Dn-2Hu"/>
                         <outlet property="emailView" destination="SgF-0L-1Pb" id="StU-Cl-euc"/>
                         <outlet property="loginBtn" destination="OMU-zd-Iqz" id="lEm-Sw-fC4"/>
@@ -140,6 +180,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cloud" width="512" height="512"/>
         <image name="sky" width="6000" height="4000"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
